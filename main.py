@@ -25,7 +25,6 @@ date_tomorrow = date_tomorrow.strftime("%d %B %Y")
 
 
 print(tomorrow)
-print("Test")   
 
 
 def read_creds(filename):
