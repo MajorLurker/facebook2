@@ -1,15 +1,9 @@
 import pandas as pd
-
-
-def weeknumber():
-    f = open("c:\\pending\\weeknumber.txt", "r")
-    week = f.readline()
-    f.close()
-    return week
+from week import week
 
 
 def dailyupdate(tomorrow):
-    week_number = int(weeknumber())
+    week_number = int(week())
 
     programs = pd.read_excel('F:\\1 Work Folder\\Back to 3BBR\\3BBR Program Spreadsheet.ods')
     print(programs)
